@@ -1,0 +1,40 @@
+1.Extract Year
+	=>Year=YEAR(Orders[Order Date])
+
+2.Extract Month
+	=>Month=MONTH(Orders[Order Date])
+
+3.Month Name
+	=>Month_Name=FORMAT(Orders[Order Date],"MMMM")
+
+4.Month Short
+	=>Month_Short=FORMAT(Orders[Order Date],"MMM")
+
+5.Day
+	=>Day=DAY(Orders[Order Date])
+
+6.Day Name
+	=>Day_Name=FORMAT(Orders[Order Date],"dddd")
+
+7.Day Short
+	=>Day_Name=FORMAT(Orders[Order Date],"ddd")
+
+8.Uppercase
+	=>Name_Upper=UPPER(Orders[Customer Name])
+9.Lowercase
+	=>Name_Lower=LOWER(Orders[Customer Name])
+10.Propercase
+	=>Name_Proper=PROPER(Orders[Customer Name])
+11.Extract Characters from Left
+	=>Name_Left=LEFT(Orders[Customer Name],5)
+12.Extract Characters from Right
+	=>Name_Right=RIGHT(Orders[Customer Name],5)
+13.MID
+	=>Slice_Name=MID(Orders[Customer Name],1,4)
+Aggregate Functions
+	1.Total_Sales=SUM(Orders[Sales])
+	2.Max_Sales=MAX(Orders[Sales])
+	3.Min_Sales=MIN(Orders[Sales])
+	4.Avg_Sales=AVERAGE(Orders[Sales])
+	5.Count_Sales=COUNT(Orders[Sales])
+	6.Distinct_Sales=DISTINCTCOUNT(Orders[Customer Name])
